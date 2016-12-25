@@ -1,0 +1,9 @@
+--- 
+- title: "Getting Started"
+  docs: 
+  - home
+
+- title:  Configuration File
+  docs:
+  - node
+  - go 

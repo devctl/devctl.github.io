@@ -1,0 +1,10 @@
+---
+layout: default
+title: {{ site.name }}
+---
+
+
+
+{% capture x %}
+{% include_relative _docs/getting-started.md %} 
+{% endcapture %}{{ x | markdownify }}
