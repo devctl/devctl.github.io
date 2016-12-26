@@ -17,9 +17,6 @@ GEM
       pathutil (~> 0.9)
       rouge (~> 1.7)
       safe_yaml (~> 1.0)
-    jekyll-octicons (3.0.1)
-      jekyll (~> 3.1)
-      octicons (~> 3.0)
     jekyll-paginate (1.1.0)
     jekyll-redirect-from (0.11.0)
       jekyll (>= 2.0)
@@ -33,12 +30,7 @@ GEM
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
     mercenary (0.3.6)
-    mini_portile2 (2.1.0)
     multi_json (1.12.1)
-    nokogiri (1.6.8.1)
-      mini_portile2 (~> 2.1.0)
-    octicons (3.0.1)
-      nokogiri (>= 1.6.3.1)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.4)
@@ -56,7 +48,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
-  jekyll-octicons
   jekyll-paginate
   jekyll-redirect-from
   jekyll-sass-converter

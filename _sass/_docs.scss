@@ -10,9 +10,17 @@
   }
 }
 
+#toc-header {
+  i {
+    font-size: 0.7em;
+  }
+}
 @media (min-width: 768px) {
   #toc-header {
     display: none;
+    .fa {
+      font-size: 0.7em;
+    }
   }
 }
 
