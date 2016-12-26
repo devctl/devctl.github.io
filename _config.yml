@@ -14,6 +14,12 @@ author:
 # Gems
 gems:
   - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-octicons
+
+whitelist:
+  - jekyll-redirect-from
+  - jekyll-octicons
 
 sass:
     sass_dir: _sass

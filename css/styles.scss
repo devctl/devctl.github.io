@@ -15,8 +15,10 @@ $devctl-magenta: #6171c4;
 $devctl-cyan: #0095de;
 
 
-@import "bootstrap-sass-3.3.7/assets/stylesheets/_bootstrap.scss";
+@import "bootstrap-4.0.0-alpha.5/scss/bootstrap.scss";
 @import "_base.scss";
 @import "cayman.scss";
 @import "normalize.scss";
-@import "_code.scss"
+@import "_code.scss";
+@import "_docs.scss";
+@import "_navbar.scss";

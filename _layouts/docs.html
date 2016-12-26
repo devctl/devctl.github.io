@@ -1,0 +1,32 @@
+---
+layout: page
+---
+
+<div class="row">
+
+<div class="col-md-4 push-md-8 col-lg-2 push-lg-10 table-of-contents">
+  <h2 id="toc-header">Table of Contents   {% octicon chevron-down height:20 id:"toc-arrow" %} </h2>
+  <div id="toc-body">
+  {% for section in site.data.docs %}
+    <h4>{{ section.title }}</h4>
+    {% for item in section.docs %}
+
+        {% assign item_url = item | prepend:"/docs/" | append:"/" %}
+        {% assign p = site.docs | where:"url", item_url | first %}
+
+        <li class="{% if item_url == page.url %}current{% endif %}"><a href="{{ p.url }}">{{ p.title }}</a></li>
+    {% endfor %}
+  {% endfor %}
+  </div>
+  <hr class="visible-sm-down">
+</div>
+
+
+<div class="col-sm-12 col-md-8 pull-md-4 col-lg-10 pull-lg-2" >
+    {{ content }}
+</div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.1/velocity.min.js" defer></script>
+<script src="/js/docs.js" defer></script>

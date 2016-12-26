@@ -1,8 +1,6 @@
 ---
-layout: page
+layout: docs
 title:  "Go"
-category: configuration file
-order: 5
 
 ---
 

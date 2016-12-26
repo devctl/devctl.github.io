@@ -4,15 +4,12 @@
   {% include head.html %}
 
   <body>
-    {% include page-header.html %}
+    {% include navbar.html %}
 
-    <section class="main-content">
-      
-      {{ content }}
+    {{content}}
 
-      {% include page-footer.html %}
-
-    </section>
-
+    {% for script in page.scripts %}
+      <script type="text/javascript" src="{{script}}" async></script>
+    {% endfor %}
   </body>
 </html>

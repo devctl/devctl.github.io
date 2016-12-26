@@ -1,0 +1,14 @@
+nav {
+  a {
+    color: $black;
+    &:focus, &:hover {
+      color: $devctl-blue
+    }
+  }
+  .noHover {
+      &:focus, &:hover {
+        color: $black;
+        cursor: default;
+      }
+    }
+}
