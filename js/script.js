@@ -31,9 +31,9 @@ if (tocBody){
       Velocity(tocArrow, {rotateZ: "180deg"} , { duration: 400 });
     }
   }
+  tocBodyStyle = tocBody.style;
 }
 
-tocBodyStyle = tocBody.style || null;
 navbarBodyStyle = navbarBody.style || null;
 
 window.onresize = function(event) {

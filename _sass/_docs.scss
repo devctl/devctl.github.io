@@ -35,10 +35,6 @@
 }
 
 .section-nav{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   .section-nav-btn {
     margin: 1em;
     display: inline-block;
@@ -56,14 +52,12 @@
     transition: all 0.2s ease-in-out;
     background-color: $devctl-blue;
     border-color: $devctl-blue;
+    color: $white;
 
     &:hover {
       background-color: $black;
       border-color: $black;
-    }
-
-    a {
-      color: $white;
+      text-decoration: none;
     }
   }
 }
