@@ -18,15 +18,41 @@ layout: page
     {% endfor %}
   {% endfor %}
   </div>
-  <hr class="visible-sm-down">
+  <hr class="hidden-md-up">
 </div>
 
 
-<div class="col-sm-12 col-md-8 pull-md-4 col-lg-10 pull-lg-2" >
+<div class="col-sm-12 col-md-8 pull-md-4 col-lg-10 pull-lg-2 doc-content" >
     {{ content }}
-</div>
+
+  {% assign docs = site.data.docs | map: 'docs' | join: ',' | split: ',' %}
+
+  {% for document in docs %}
+    {% assign document_url = document | prepend:"/docs/" | append:"/" %}
+    {% if document_url == page.url %}
+      <div class="section-nav">
+        <div class="back section-nav-btn">
+            {% if forloop.first %}
+              <span class="prev disabled">Back</span>
+            {% else %}
+              {% assign previous = forloop.index0 | minus: 1 %}
+              {% assign previous_page = docs[previous] | prepend:"/docs/" | append:"/" %}
+              <a href="{{ previous_page }}" class="prev">Back</a>
+            {% endif %}
+        </div>
+        <div class="next section-nav-btn">
+            {% if forloop.last %}
+              <span class="next disabled">Next</span>
+            {% else %}
+              {% assign next = forloop.index0 | plus: 1 %}
+              {% assign next_page = docs[next] | prepend:"/docs/" | append:"/" %}
+              <a href="{{ next_page }}" class="next">Next</a>
+            {% endif %}
+        </div>
+      {% break %}
+    {% endif %}
+  {% endfor %}
 
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.1/velocity.min.js" defer></script>
-<script src="/js/docs.js" defer></script>
+</div>

@@ -1,11 +1,17 @@
 <nav class="container">
-    <div>
-        <a class="navbar-brand" href="/">devctl</a>
-        <a class="navbar-brand" href="/">Getting Started</a>
-        <a class="navbar-brand" href="/docs">Documentation</a>
+    <div id="navbar-header" class="hidden-md-up">
+        <a  href="/">devctl</a>
+        <i class="fa fa-bars fa-2x float-sm-right" aria-hidden="true"></i>
     </div>
-    <div class="float-md-right">
-        <a class="navbar-brand" href="https://github.com/devctl/devctl"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a class="navbar-brand noHover" href="#">v{{site.latest_version}} </a>
+    <div id="navbar-body">
+        <div>
+            <a class="hidden-sm-down" href="/">devctl</a>
+            <a href="/">Getting Started</a>
+            <a href="/docs">Documentation</a>
+        </div>
+        <div class=>
+            <a href="https://github.com/devctl/devctl"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a class="noHover" href="#">v{{site.latest_version}} </a>
+        </div>
     </div>
 </nav>

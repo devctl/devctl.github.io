@@ -1,7 +1,22 @@
 .table-of-contents {
   padding-bottom: 1em;
+  li {
+    list-style-type: none;
+  }
+  a {
+    color: $devctl-blue;
+    &:hover {
+      text-decoration: none;
+      color: $black;
+    }
+  }
+  .current {
+    a{
+      color: $black;
+      cursor: default;
+    }
+  }
 }
-
 
 // @media (max-width: breakpoint-max("sm")) {
 @media (max-width: 768px) {
@@ -15,6 +30,45 @@
     font-size: 0.7em;
   }
 }
+
+.doc-content {
+}
+
+.section-nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  .section-nav-btn {
+    margin: 1em;
+    display: inline-block;
+    font-weight: normal;
+    line-height: 1.25;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: all 0.2s ease-in-out;
+    background-color: $devctl-blue;
+    border-color: $devctl-blue;
+
+    &:hover {
+      background-color: $black;
+      border-color: $black;
+    }
+
+    a {
+      color: $white;
+    }
+  }
+}
+
+
 @media (min-width: 768px) {
   #toc-header {
     display: none;
@@ -23,4 +77,3 @@
     }
   }
 }
-

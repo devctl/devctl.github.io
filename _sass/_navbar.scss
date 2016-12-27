@@ -1,8 +1,23 @@
 nav {
+  padding: 1em;
+  #navbar-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   a {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+  }
+  a, i {
     color: $black;
+    cursor: pointer;
     &:focus, &:hover {
-      color: $devctl-blue
+      color: $devctl-blue;
+      text-decoration: none;
     }
   }
   .noHover {
@@ -11,4 +26,25 @@ nav {
         cursor: default;
       }
     }
+}
+
+
+
+@media (max-width: breakpoint-max("sm")) {
+  nav {
+    #navbar-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1em;
+    }
+    #navbar-body {
+      padding: 0 1em;
+      display: none;
+      div, a {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
 }
