@@ -48,3 +48,15 @@ nav {
     }
   }
 }
+
+.doc-header {
+  @extend .page-header;
+  text-align: left;
+  padding: 3em;
+  h1 {
+    color: $white;
+    font-weight: bold;
+    font-size: 3.25rem;
+    padding-left: 0.5em;
+  }
+}
