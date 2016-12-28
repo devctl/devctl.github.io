@@ -53,6 +53,3 @@ DEPENDENCIES
   jekyll-sass-converter
   kramdown
   pygments.rb
-
-BUNDLED WITH
-   1.13.6
