@@ -1,0 +1,10 @@
+---
+layout: basic
+---
+
+Latest:{{site.data.sha.linux_amd64[site.latest_version]}}
+</br>
+{% for version in site.data.sha.linux_amd64 %}
+  {{version[0]}}:{{version[1]}}
+  <br>
+{% endfor %}
