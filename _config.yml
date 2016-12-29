@@ -4,9 +4,6 @@ tagline:      An easy way to manage development environemts
 baseurl:      ""
 paginate:     1
 
-
-latest_version: 0.1.1
-
 # About/contact
 author:
   name:       Benjamin Caldwell
