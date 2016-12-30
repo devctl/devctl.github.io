@@ -2,7 +2,9 @@ darwin_amd64:
   0.0.1: 31470d5efcb509eca74e7c8c5e9fd8db
   0.1.1: temp
   1.0.1: 31470d5efcb509eca74e7c8c5e9fd8db
+  1.0.5: bd601b6ef9089103e189796b18347504
 linux_amd64:
   0.0.1: afacf86f8e5b2be59558cf1b79d1d5ba
   0.1.1: temp
   1.0.1: afacf86f8e5b2be59558cf1b79d1d5ba
+  1.0.5: 900c10240afc9f0992e5d53997141ac3
