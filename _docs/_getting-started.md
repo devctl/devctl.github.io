@@ -1,5 +1,7 @@
 <!--getting started page. Included from index.html. Note it is also ignored in _config.yml --> 
  
+devctl is a work in process. Use with cation. Most features do not work at the moment.
+
 devctl is an open source command line interface (CLI) aimed towards developers
 and enables them to manage their development environments across different
 projects. Currently devctl only supports `zsh`.
